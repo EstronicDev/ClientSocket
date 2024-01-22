@@ -1,0 +1,22 @@
+{
+  "name": "tyapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.4.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  }
+}
