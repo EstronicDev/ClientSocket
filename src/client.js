@@ -4,7 +4,6 @@ function socket(req, res) {
     const io = require('socket.io-client').io;
     const socket = io("http://localhost:9000");
     
-    // Armazenar a instância do socket para uso posterior
     socketInstance = socket;
 
     const id = req.query.id;
@@ -13,7 +12,7 @@ function socket(req, res) {
         socket.emit('select_device', { id });
 
         socket.on('mqtt_message', (data) => {
-            console.log("mqtt message: ", data);
+            console.log("mqtt message: ", data); // Mensagem do dispositivo
         });
 
         res.send(`Conectado com o dispositivo: ${id}`);
