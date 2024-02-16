@@ -1,8 +1,8 @@
-🔑 Mudar o apontamento para o servidor no código.
+🔑 Mudar o apontamento para o servidor no código :
 ```
 const socket = io(`http://ipservidor:porta`);
 ```
-🛠 Para rodar:
+🛠 Para rodar :
 ```
 npm i
 ```
